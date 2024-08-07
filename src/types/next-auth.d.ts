@@ -1,4 +1,5 @@
 import type { DefaultSession } from "next-auth"
+import type { AdapterUser as PrismaAdapterUser } from "@auth/prisma-adapter"
 
 export type Role = "USER" | "ADMIN"
 
@@ -13,7 +14,7 @@ declare module "next-auth" {
 }
 
 declare module "@auth/core/adapters" {
-    interface AdapterUser {
+    interface AdapterUser extends PrismaAdapterUser {
         role: Role
     }
 }
