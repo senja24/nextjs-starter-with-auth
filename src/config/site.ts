@@ -8,7 +8,7 @@ const links = {
     discord: "",
     authorsWebsite: "https://ikaagussetiawan.com",
     authorsGitHub: "https://github.com/senja24",
-    openGraphImage: "https://example.com/images/opengraph-image.png",
+    openGraphImage: "https://jajan-digital-nextjs-starter-with-auth.vercel.app/images/opengraph-image.png",
 }
 
 export const siteConfig = {
@@ -16,7 +16,7 @@ export const siteConfig = {
     description:
         "An open-source starter for Next.js 14 full-stack projects with advanced authentication and several database configurations. The aim of this project is to provide a solid foundation for faster building and launching SaaS products, marketing sites, blogs, and more.",
     links,
-    url: "https://example.com",
+    url: "https://jajan-digital-nextjs-starter-with-auth.vercel.app",
     ogImage: links.openGraphImage,
     author: "Ika Agus Setiawan",
     hostingRegion: "fra1",
