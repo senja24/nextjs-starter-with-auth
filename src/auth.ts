@@ -22,7 +22,7 @@ export const {
     secret: env.AUTH_SECRET,
     session: {
         strategy: "jwt",
-        maxAge: 30 * 24 * 60 * 60, // 30 days
+        maxAge: 30 * 24 * 60 * 60, // 30 daysd
         updateAge: 24 * 60 * 60, // 24 hours
     },
     events: {
@@ -48,6 +48,6 @@ export const {
             return !existingUser?.emailVerified ? false : true
         },
     },
-    adapter: PrismaAdapter(prisma) as any,
+    adapter: PrismaAdapter(prisma),
     ...authConfig,
 })
